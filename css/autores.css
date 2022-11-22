@@ -1,0 +1,61 @@
+/******************************************/
+/* Web del Romanticismo                   */
+/* CSS de Autores románticos.             */
+/* Autor: Jorge Bazaga Sarmiento          */
+/* versión: 1.0                           */
+/******************************************/
+
+
+
+
+/************* ESTILO GENERAL *************/
+@font-face {
+    font-family: titulos;
+    src: url('../fonts/Satisfy-Regular.ttf');
+}
+/*OJOO!!!! PARA QUE CUENTE EN EL WIDTH DE CADA CAJA, EL BORDE Y EL PADDING.*/
+* {box-sizing: border-box;}
+
+h1{
+font-size: 3em;
+text-align: center;
+border: 1px dotted black;
+padding: 15%;
+}
+
+#espronceda{width: 20%;
+    float: left; 
+    padding: 4%;}
+
+body{background-color: lightblue;
+    font-family: 'Montserrat' sans-serif;
+    padding:4%}
+
+p{text-align: justify;
+    text-indent: 2.5em;}
+
+#wrapper{background-color: white;
+            width: 80%;
+            margin: auto;
+            padding: 20px;}
+            /* height: 100vh;} esto es obligar */
+            
+
+h1, h2, h3{font-family: titulos;
+            color: rgb(27, 27, 82)
+        }
+
+.limpiafloat{clear: both;}
+
+/************* MEDIA QUERIES *************/
+@media only screen and (width<=900px){ /*todas las excepciones para movil*/
+    
+    #espronceda{width: 50%;}
+}
+
+
+
+@media only screen and (width<=600px){ /*todas las excepciones para movil*/
+    #wrapper{width: 100%;}
+    #espronceda{width: 100%;}
+}

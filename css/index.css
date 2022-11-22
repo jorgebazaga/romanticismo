@@ -1,0 +1,85 @@
+/**************************************************/
+/* Web del Romanticismo - Estilo de landing page  */
+/* CSS de Autores románticos.                     */
+/* Autor: Jorge Bazaga Sarmiento                  */
+/* versión: 1.0                                   */
+/**************************************************/
+
+/************* ESTILO GENERAL *************/
+@font-face {
+    font-family: 'Montserrat' , sans-serif;
+    src: url('../fonts/Satisfy-Regular.ttf');
+}
+
+*{box-sizing: border-box;}              /* del borde para dentro todo es caja */
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: rgb(114, 92, 92);
+    font-weight: 600;
+}
+
+#wrapper {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+/************* HERO SECTION *************/
+#hero { 
+    background-image: url("./images/wanderer-above-the-sea-fog-friedrich.jpg"); /* coloco imagen de fondo */
+    height: 100vh;                                                             /* obligar a que salga entera */
+    background-repeat: no-repeat;                                              /* para que no se repita la imagen */
+    background-size: cover;                                                    /* para que cubra el wrapper */
+    background-position: center;  
+}
+
+
+
+#titulo { font-family: titulos;
+          font-size: 3rem;
+          text-align: center;
+          position: absolute;
+          width: 40%;
+          top: 30%;
+          left: 30%;
+          background-color: rgb(255,255,255,0.25);
+          backdrop-filter: blur(5px);
+          color: black;
+          background-color: #fff;
+
+}
+
+/************* HERO SECTION: OPCIÓN 4 *************/
+/* #hero2 { 
+  
+} */
+#titulo4 {  position: relative;
+            top: -205px;
+            bottom: -200px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+            } /* habría que cambiar la media query el top de posicionamiento */
+
+#myVideo {position: relative;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+}
+
+
+/************* POSICIONAMIENTO ABSOLUTO Y RELATIVO: 
+                    - CONTENEDOR WRAPPER: RELATIVE
+                    - CONTENEDOR 
+
+
+
+
+/************* MEDIA QUERIES *************/
+
+@media only screen and (width <= 900px){
+    #wrapper {width: 100%;}
+}

@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: escritura;
+    src: url('../fonts/Satisfy-Regular.ttf');
+}
+
+body{font-family: escritura;
+    background-image: url('../fondo-del-pirata-con-los-objetos-del-mar-50760545.jpg');
+    background-color: #C9B48B;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+#poema{background-color: #f5eacf80;
+        width:30%;
+        text-align: center;
+        margin-right:35%;
+        margin-left:35%;
+        margin-top:20vh;
+        padding:20px 0;
+        border-radius: 0 40px 0 40px;
+}
+
+@media only screen and (width <=900px) {
+    #poema{width: 50%;
+    margin-left: 30%;}
+}
+
+@media only screen and (width<=600px) {
+    #poema{width: 70%;
+        margin-left: 15%;
+        background-color: #f5eacf80;}
+}
